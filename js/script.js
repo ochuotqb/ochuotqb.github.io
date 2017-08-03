@@ -188,8 +188,7 @@ $(function () {
         $divcell.children().text('');
         turn = 1;
         win = false;
-        scorePlayer = 0;
-        scoreComputer = 0;
+       
     }
     $('div .player span.reset').click(function () {
         reset();
@@ -197,6 +196,8 @@ $(function () {
         $('div .ques').fadeIn(400);
         $('div #score1').text(0);
         $('div #score2').text(0);
+        scorePlayer = 0;
+        scoreComputer = 0;
     });
     $('div .chooseX').click(function () {
         isComputer = 'O';
